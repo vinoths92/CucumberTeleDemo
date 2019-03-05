@@ -9,7 +9,7 @@ public class AccessSteps {
 	@Then("The customer should see the customer id generated.")
 	public void the_customer_should_see_the_customer_id_generated() {
 		AccessPage access = new AccessPage();
-		Assert.assertTrue(access.getLbl_custId().isDisplayed());
+		Assert.assertTrue(false);
 
 	}
 }

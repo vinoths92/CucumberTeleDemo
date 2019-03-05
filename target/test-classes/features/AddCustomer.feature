@@ -1,10 +1,10 @@
 #Author: greens
+@regression @sprint1 @us1234 @xyz @addcust
 Feature: To test the add customer functionlaity
 
-  Background: 
-    Given The user is in telecom home pag
-
+  @smoke1
   Scenario: To test the submit button1
+    Given The user is in telecom home pag
     And The user navigates to add customer page
     When The user fill in the form details
       | fname  | lname  | email           | adress  | phnum     |
@@ -15,7 +15,9 @@ Feature: To test the add customer functionlaity
     And The user submits the form
     Then The customer should see the customer id generated.
 
+  @smoke2
   Scenario: To test the submit button2
+    Given The user is in telecom home pag
     And The user navigates to add customer page
     When The user fill in the form details
       | fname  | lname  | email           | adress  | phnum     |
@@ -26,7 +28,9 @@ Feature: To test the add customer functionlaity
     And The user submits the form
     Then The customer should see the customer id generated.
 
-  Scenario: To test the submit button2
+  @smoke3 @smoke1
+  Scenario: To test the submit button3
+    Given The user is in telecom home pag
     And The user navigates to add customer page
     When The user fill in the form details
       | fname  | lname  | email           | adress  | phnum     |

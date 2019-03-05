@@ -2,19 +2,59 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "To test the add customer functionlaity",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "To test the submit button",
+  "name": "To test the submit button1",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke1"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "The user is in telecom home pag",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddCustomerSteps.x()"
+  "location": "HomePageSteps.the_user_is_in_telecom_home_pag()"
 });
 formatter.result({
   "status": "passed"
@@ -24,7 +64,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCustomerSteps.the_user_navigates_to_add_customer_page()"
+  "location": "HomePageSteps.the_user_navigates_to_add_customer_page()"
 });
 formatter.result({
   "status": "passed"
@@ -101,278 +141,274 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddCustomerSteps.the_customer_should_see_the_customer_id_generated()"
+  "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
 });
 formatter.result({
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:16)\r\n",
+  "status": "failed"
+});
+formatter.after({
   "status": "passed"
 });
-formatter.uri("src/test/resources/features/AddtariffPlan.feature");
-formatter.feature({
-  "name": "To test add tariff plan functionality",
+formatter.scenario({
+  "name": "To test the submit button2",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "Add multiple tariff plan",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "The user is in add tariff plan page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user fill the plan details \"\u003cMonthRent\u003e\", \"\u003cFreeLoc\u003e\",\"\u003cFreeInt\u003e\",\"\u003cFreesms\u003e\",\"\u003cLocCharges\u003e\",\"\u003cIntCharges\u003e\",\"\u003cSMSCharges\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user submits the add tariff plan form",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "The user should see the success message",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "MonthRent",
-        "FreeLoc",
-        "FreeInt",
-        "Freesms",
-        "LocCharges",
-        "IntCharges",
-        "SMSCharges"
-      ]
+      "name": "@regression"
     },
     {
-      "cells": [
-        "100",
-        "200",
-        "300",
-        "400",
-        "500",
-        "600",
-        "700"
-      ]
+      "name": "@sprint1"
     },
     {
-      "cells": [
-        "200",
-        "300",
-        "400",
-        "500",
-        "600",
-        "700",
-        "800"
-      ]
+      "name": "@us1234"
     },
     {
-      "cells": [
-        "300",
-        "400",
-        "500",
-        "600",
-        "700",
-        "800",
-        "900"
-      ]
+      "name": "@xyz"
     },
     {
-      "cells": [
-        "400",
-        "500",
-        "600",
-        "700",
-        "800",
-        "900",
-        "1000"
-      ]
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke2"
     }
   ]
 });
-formatter.scenario({
-  "name": "Add multiple tariff plan",
-  "description": "",
-  "keyword": "Scenario Outline"
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "The user is in add tariff plan page",
+  "name": "The user is in telecom home pag",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_is_in_add_tariff_plan_page()"
+  "location": "HomePageSteps.the_user_is_in_telecom_home_pag()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user fill the plan details \"100\", \"200\",\"300\",\"400\",\"500\",\"600\",\"700\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_fill_the_plan_details(String,String,String,String,String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user submits the add tariff plan form",
+  "name": "The user navigates to add customer page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_submits_the_add_tariff_plan_form()"
+  "location": "HomePageSteps.the_user_navigates_to_add_customer_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see the success message",
+  "name": "The user fill in the form details",
+  "rows": [
+    {
+      "cells": [
+        "fname",
+        "lname",
+        "email",
+        "adress",
+        "phnum"
+      ]
+    },
+    {
+      "cells": [
+        "testf",
+        "testl",
+        "test4@gmail.com",
+        "chennai",
+        "123456789"
+      ]
+    },
+    {
+      "cells": [
+        "testxf",
+        "testxl",
+        "test1@gmail.com",
+        "chennai",
+        "223456789"
+      ]
+    },
+    {
+      "cells": [
+        "testyf",
+        "testyl",
+        "test2@gmail.com",
+        "chennai",
+        "323456789"
+      ]
+    },
+    {
+      "cells": [
+        "testzf",
+        "testzl",
+        "test3@gmail.com",
+        "chennai",
+        "423456789"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_fill_in_the_form_details(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The customer should see the customer id generated.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_should_see_the_success_message()"
+  "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
 });
 formatter.result({
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:29)\r\n",
+  "status": "failed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Add multiple tariff plan",
+  "name": "To test the submit button3",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke3"
+    },
+    {
+      "name": "@smoke1"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "The user is in add tariff plan page",
+  "name": "The user is in telecom home pag",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_is_in_add_tariff_plan_page()"
+  "location": "HomePageSteps.the_user_is_in_telecom_home_pag()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user fill the plan details \"200\", \"300\",\"400\",\"500\",\"600\",\"700\",\"800\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_fill_the_plan_details(String,String,String,String,String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user submits the add tariff plan form",
+  "name": "The user navigates to add customer page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_submits_the_add_tariff_plan_form()"
+  "location": "HomePageSteps.the_user_navigates_to_add_customer_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see the success message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_should_see_the_success_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Add multiple tariff plan",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "The user is in add tariff plan page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_is_in_add_tariff_plan_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user fill the plan details \"300\", \"400\",\"500\",\"600\",\"700\",\"800\",\"900\"",
+  "name": "The user fill in the form details",
+  "rows": [
+    {
+      "cells": [
+        "fname",
+        "lname",
+        "email",
+        "adress",
+        "phnum"
+      ]
+    },
+    {
+      "cells": [
+        "testf",
+        "testl",
+        "test4@gmail.com",
+        "chennai",
+        "123456789"
+      ]
+    },
+    {
+      "cells": [
+        "testxf",
+        "testxl",
+        "test1@gmail.com",
+        "chennai",
+        "223456789"
+      ]
+    },
+    {
+      "cells": [
+        "testyf",
+        "testyl",
+        "test2@gmail.com",
+        "chennai",
+        "323456789"
+      ]
+    },
+    {
+      "cells": [
+        "testzf",
+        "testzl",
+        "test3@gmail.com",
+        "chennai",
+        "423456789"
+      ]
+    }
+  ],
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_fill_the_plan_details(String,String,String,String,String,String,String)"
+  "location": "AddCustomerSteps.the_user_fill_in_the_form_details(DataTable)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user submits the add tariff plan form",
+  "name": "The user submits the form",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_submits_the_add_tariff_plan_form()"
+  "location": "AddCustomerSteps.the_user_submits_the_form()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see the success message",
+  "name": "The customer should see the customer id generated.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddTariffplan.the_user_should_see_the_success_message()"
+  "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:42)\r\n",
+  "status": "failed"
 });
-formatter.scenario({
-  "name": "Add multiple tariff plan",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "The user is in add tariff plan page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_is_in_add_tariff_plan_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user fill the plan details \"400\", \"500\",\"600\",\"700\",\"800\",\"900\",\"1000\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_fill_the_plan_details(String,String,String,String,String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user submits the add tariff plan form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_submits_the_add_tariff_plan_form()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see the success message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddTariffplan.the_user_should_see_the_success_message()"
-});
-formatter.result({
+formatter.after({
   "status": "passed"
 });
 });

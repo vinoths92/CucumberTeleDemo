@@ -1,15 +1,14 @@
 #Author: your.email@your.domain.com
+@regression
 Feature: To test add tariff plan functionality
 
-  Scenario Outline: Add multiple tariff plan
+  @sprint2
+  Scenario Outline: Add Traffi details and get message
     Given The user is in add tariff plan page
-    When The user fill the plan details "<MonthRent>", "<FreeLoc>","<FreeInt>","<Freesms>","<LocCharges>","<IntCharges>","<SMSCharges>"
-    And The user submits the add tariff plan form
+    When User type the form details"<Monthly Rental>","<Free Local MinutesFree>","<International Minutes>","<Free SMS Pack>","<Local Per Minutes Charges>","<International Per Minutes Charges>","<SMS Per Charges>"
+    And Click the sumit button
     Then The user should see the success message
 
     Examples: 
-      | MonthRent | FreeLoc | FreeInt | Freesms | LocCharges | IntCharges | SMSCharges |
-      |       100 |     200 |     300 |     400 |        500 |        600 |        700 |
-      |       200 |     300 |     400 |     500 |        600 |        700 |        800 |
-      |       300 |     400 |     500 |     600 |        700 |        800 |        900 |
-      |       400 |     500 |     600 |     700 |        800 |        900 |       1000 |
+      | Monthly Rental | Free Local MinutesFree | International Minutes | Free SMS Pack | Local Per Minutes Charges | International Per Minutes Charges | SMS Per Charges |
+      |            200 |                    300 |                   400 |           500 |                       609 |                               700 |             800 |

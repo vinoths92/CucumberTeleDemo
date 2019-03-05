@@ -2,12 +2,49 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "To test the add customer functionlaity",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    }
+  ]
 });
 formatter.scenario({
   "name": "To test the submit button1",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke1"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -107,15 +144,269 @@ formatter.match({
   "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
 });
 formatter.result({
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:16)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To test the submit button2",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke2"
+    }
+  ]
+});
+formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user does one more verification",
+  "name": "The user is in telecom home pag",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "HomePageSteps.the_user_is_in_telecom_home_pag()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigates to add customer page",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "HomePageSteps.the_user_navigates_to_add_customer_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user fill in the form details",
+  "rows": [
+    {
+      "cells": [
+        "fname",
+        "lname",
+        "email",
+        "adress",
+        "phnum"
+      ]
+    },
+    {
+      "cells": [
+        "testf",
+        "testl",
+        "test4@gmail.com",
+        "chennai",
+        "123456789"
+      ]
+    },
+    {
+      "cells": [
+        "testxf",
+        "testxl",
+        "test1@gmail.com",
+        "chennai",
+        "223456789"
+      ]
+    },
+    {
+      "cells": [
+        "testyf",
+        "testyl",
+        "test2@gmail.com",
+        "chennai",
+        "323456789"
+      ]
+    },
+    {
+      "cells": [
+        "testzf",
+        "testzl",
+        "test3@gmail.com",
+        "chennai",
+        "423456789"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_fill_in_the_form_details(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The customer should see the customer id generated.",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:29)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To test the submit button3",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@sprint1"
+    },
+    {
+      "name": "@us1234"
+    },
+    {
+      "name": "@xyz"
+    },
+    {
+      "name": "@addcust"
+    },
+    {
+      "name": "@smoke3"
+    },
+    {
+      "name": "@smoke1"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user is in telecom home pag",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "HomePageSteps.the_user_is_in_telecom_home_pag()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigates to add customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePageSteps.the_user_navigates_to_add_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user fill in the form details",
+  "rows": [
+    {
+      "cells": [
+        "fname",
+        "lname",
+        "email",
+        "adress",
+        "phnum"
+      ]
+    },
+    {
+      "cells": [
+        "testf",
+        "testl",
+        "test4@gmail.com",
+        "chennai",
+        "123456789"
+      ]
+    },
+    {
+      "cells": [
+        "testxf",
+        "testxl",
+        "test1@gmail.com",
+        "chennai",
+        "223456789"
+      ]
+    },
+    {
+      "cells": [
+        "testyf",
+        "testyl",
+        "test2@gmail.com",
+        "chennai",
+        "323456789"
+      ]
+    },
+    {
+      "cells": [
+        "testzf",
+        "testzl",
+        "test3@gmail.com",
+        "chennai",
+        "423456789"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_fill_in_the_form_details(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCustomerSteps.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The customer should see the customer id generated.",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccessSteps.the_customer_should_see_the_customer_id_generated()"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:42)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"
