@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: stepdefinition.TestRunner2
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 36.897 sec <<< FAILURE!
+To test the submit button1(To test the add customer functionlaity)  Time elapsed: 13.163 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)
+	at ?.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:16)
+
+To test the submit button2(To test the add customer functionlaity)  Time elapsed: 11.626 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)
+	at ?.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:29)
+
+To test the submit button3(To test the add customer functionlaity)  Time elapsed: 11.928 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)
+	at ?.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:42)
+

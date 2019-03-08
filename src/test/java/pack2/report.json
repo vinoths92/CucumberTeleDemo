@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2993751622,
+              "duration": 2988308979,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 2953276096,
+              "duration": 2895301623,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18520483537,
+              "duration": 3704276224,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 6416577455,
+              "duration": 2684404484,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 397613346,
+              "duration": 779272600,
               "status": "passed"
             },
             "line": 9,
@@ -117,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 3671912906,
+              "duration": 1564352452,
               "status": "passed"
             },
             "line": 15,
@@ -130,7 +130,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:16)\r\n",
-              "duration": 13116304,
+              "duration": 5074865,
               "status": "failed"
             },
             "line": 16,
@@ -166,7 +166,7 @@
         "before": [
           {
             "result": {
-              "duration": 2179971621,
+              "duration": 2374910656,
               "status": "passed"
             },
             "match": {
@@ -181,7 +181,7 @@
         "after": [
           {
             "result": {
-              "duration": 667427967,
+              "duration": 2899718859,
               "status": "passed"
             },
             "match": {
@@ -194,7 +194,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27947358474,
+              "duration": 2618569806,
               "status": "passed"
             },
             "line": 20,
@@ -206,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 13747986555,
+              "duration": 1863593937,
               "status": "passed"
             },
             "line": 21,
@@ -218,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 399999506,
+              "duration": 734700383,
               "status": "passed"
             },
             "line": 22,
@@ -277,7 +277,7 @@
           },
           {
             "result": {
-              "duration": 10475364043,
+              "duration": 1531521328,
               "status": "passed"
             },
             "line": 28,
@@ -290,7 +290,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:29)\r\n",
-              "duration": 638942,
+              "duration": 281741,
               "status": "failed"
             },
             "line": 29,
@@ -326,7 +326,7 @@
         "before": [
           {
             "result": {
-              "duration": 2208074160,
+              "duration": 2212969470,
               "status": "passed"
             },
             "match": {
@@ -341,7 +341,7 @@
         "after": [
           {
             "result": {
-              "duration": 650987187,
+              "duration": 2911935985,
               "status": "passed"
             },
             "match": {
@@ -354,7 +354,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16053044568,
+              "duration": 3179543481,
               "status": "passed"
             },
             "line": 33,
@@ -366,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 10884078132,
+              "duration": 1359936416,
               "status": "passed"
             },
             "line": 34,
@@ -378,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 371933288,
+              "duration": 933595140,
               "status": "passed"
             },
             "line": 35,
@@ -437,7 +437,7 @@
           },
           {
             "result": {
-              "duration": 9592408644,
+              "duration": 1685547669,
               "status": "passed"
             },
             "line": 41,
@@ -450,7 +450,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinition.AccessSteps.the_customer_should_see_the_customer_id_generated(AccessSteps.java:12)\r\n\tat ✽.The customer should see the customer id generated.(src/test/resources/features/AddCustomer.feature:42)\r\n",
-              "duration": 278568,
+              "duration": 399163,
               "status": "failed"
             },
             "line": 42,
