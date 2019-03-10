@@ -1,5 +1,5 @@
 #Author: your.email@your.domain.com
-@smoke
+@regression
 Feature: To test add tariff plan functionality
 
   @sprint2
