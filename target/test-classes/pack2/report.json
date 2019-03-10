@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3467603454,
+              "duration": 3155730297,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 2960039634,
+              "duration": 2958023721,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5687633884,
+              "duration": 4365071132,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1798719999,
+              "duration": 1950946337,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 1116336940,
+              "duration": 719443852,
               "status": "passed"
             },
             "line": 9,
@@ -117,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 2437727240,
+              "duration": 1584601199,
               "status": "passed"
             },
             "line": 15,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 12016848,
+              "duration": 3878439,
               "status": "passed"
             },
             "line": 16,
@@ -165,7 +165,7 @@
         "before": [
           {
             "result": {
-              "duration": 2218895003,
+              "duration": 2176258271,
               "status": "passed"
             },
             "match": {
@@ -180,7 +180,7 @@
         "after": [
           {
             "result": {
-              "duration": 2948155371,
+              "duration": 2971859722,
               "status": "passed"
             },
             "match": {
@@ -193,7 +193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3109852306,
+              "duration": 3815302537,
               "status": "passed"
             },
             "line": 20,
@@ -205,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 2034595292,
+              "duration": 2355574793,
               "status": "passed"
             },
             "line": 21,
@@ -217,7 +217,7 @@
           },
           {
             "result": {
-              "duration": 482009990,
+              "duration": 457292569,
               "status": "passed"
             },
             "line": 22,
@@ -276,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 1859376184,
+              "duration": 1524463007,
               "status": "passed"
             },
             "line": 28,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 117421,
+              "duration": 132231,
               "status": "passed"
             },
             "line": 29,
@@ -324,7 +324,7 @@
         "before": [
           {
             "result": {
-              "duration": 2158373870,
+              "duration": 2161386633,
               "status": "passed"
             },
             "match": {
@@ -339,7 +339,7 @@
         "after": [
           {
             "result": {
-              "duration": 2937547581,
+              "duration": 2958972261,
               "status": "passed"
             },
             "match": {
@@ -352,7 +352,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3824846126,
+              "duration": 3257407169,
               "status": "passed"
             },
             "line": 33,
@@ -364,7 +364,7 @@
           },
           {
             "result": {
-              "duration": 1601947153,
+              "duration": 1828381468,
               "status": "passed"
             },
             "line": 34,
@@ -376,7 +376,7 @@
           },
           {
             "result": {
-              "duration": 880704952,
+              "duration": 604996588,
               "status": "passed"
             },
             "line": 35,
@@ -435,7 +435,7 @@
           },
           {
             "result": {
-              "duration": 1439360211,
+              "duration": 1707137857,
               "status": "passed"
             },
             "line": 41,
@@ -447,7 +447,7 @@
           },
           {
             "result": {
-              "duration": 122358,
+              "duration": 125885,
               "status": "passed"
             },
             "line": 42,
@@ -527,144 +527,6 @@
         "location": {
           "line": 2,
           "column": 35
-        }
-      }
-    ]
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2197834224,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.x()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Add Traffi details and get message",
-        "description": "",
-        "id": "to-test-add-tariff-plan-functionality;add-traffi-details-and-get-message;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 655268898,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.y()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7281932062,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "The user is in add tariff plan page",
-            "match": {
-              "location": "HomePageSteps.the_user_is_in_add_tariff_plan_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 415174537,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User type the form details\"200\",\"300\",\"400\",\"500\",\"609\",\"700\",\"800\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"200\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"300\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"400\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"500\"",
-                  "offset": 44
-                },
-                {
-                  "val": "\"609\"",
-                  "offset": 50
-                },
-                {
-                  "val": "\"700\"",
-                  "offset": 56
-                },
-                {
-                  "val": "\"800\"",
-                  "offset": 62
-                }
-              ],
-              "location": "AddTariffPlanSteps.user_type_the_form_details(String,String,String,String,String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1213887483,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Click the sumit button",
-            "match": {
-              "location": "AddTariffPlanSteps.click_the_sumit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50265256,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user should see the success message",
-            "match": {
-              "location": "AddTariffPlanSteps.the_user_should_see_the_success_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@sprint2"
-          }
-        ]
-      }
-    ],
-    "name": "To test add tariff plan functionality",
-    "description": "",
-    "id": "to-test-add-tariff-plan-functionality",
-    "keyword": "Feature",
-    "uri": "src/test/resources/features/AddtariffPlan.feature",
-    "tags": [
-      {
-        "name": "@regression",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
         }
       }
     ]
