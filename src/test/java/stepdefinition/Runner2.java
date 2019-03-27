@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(features = "@src/test/resources/failed.txt", glue = { "stepdefinition" }, plugin = {
 		"html:target" }, dryRun = false, monochrome = true)
 
-public class TestRunner2 {
+public class Runner2 {
 
 
 }

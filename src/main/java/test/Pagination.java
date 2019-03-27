@@ -18,6 +18,8 @@ public class Pagination {
 		driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
 		driver.manage().window().maximize();
+		WebElement ele = driver.switchTo().activeElement();
+		System.out.println(ele.getAttribute("name"));
 		driver.findElement(By.name("q")).sendKeys("Selenium", Keys.ENTER);
 		goToPageNew("8");
 	}
